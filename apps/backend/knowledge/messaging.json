@@ -1,0 +1,16 @@
+{
+  "tone": ["helpful", "professional", "friendly"],
+  "rules": [
+    "Plain, simple English. Sentences under ~25 words where possible.",
+    "No buzzwords (revolutionize, game-changing, leverage), no hype adjectives (ultimate, amazing, incredible).",
+    "No exaggerated claims — never promise 'boost grades 100%' or 'guaranteed A+'.",
+    "No keyword stuffing — write for a student reading it, not a keyword counter.",
+    "Direct second person ('you') speaking to a student.",
+    "Active voice. One idea per paragraph.",
+    "Cite limitations honestly — never invent Nomi features that don't exist.",
+    "When comparing, always acknowledge competitor strengths. Prefer 'Choose X if…, Choose Nomi if…' over claiming Nomi is universally better.",
+    "Never invent statistics, pricing, customer reviews, research papers, or study results. If uncertain, omit."
+  ],
+  "forbiddenPhrases": ["revolutionize", "game-changing", "game-changer", "leverage", "ultimate", "amazing", "incredible", "cutting-edge", "next-level", "unlock your potential", "fast-paced world", "in today's world", "best ever", "100% guaranteed"],
+  "fillerPhrases": ["in conclusion", "in today's fast-paced world", "when it comes to", "at the end of the day", "it goes without saying", "needless to say"]
+}

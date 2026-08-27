@@ -1,0 +1,13 @@
+{
+  "brandProduct": "Nomi",
+  "brandSingular": false,
+  "capitalization": "Always write the product name as 'Nomi' (capital N, lowercase omi). Never 'NOMI' or 'nomi' in prose.",
+  "urlStyle": "On-site links use lowercase slugs, hyphenated, no trailing slash. Absolute external URLs use https.",
+  "headingStyle": "Sentence case is fine. One H1 per page; H2s for sections; H3s only for sub-lists inside a section.",
+  "listStyle": "Use bullets for benefits/tips. Use numbered lists only for ordered steps (e.g. how-to).",
+  "codeAndMath": "Leave equations and code in their original form. Translate only prose.",
+  "emojiPolicy": "No emoji in product content.",
+  "ctaStyle": "CTA short, specific, honest. Always include a verb (try/start/generate/switch/study). Never hype words.",
+  "comparisonTone": "Balanced. Name the competitor's real strengths. 'Choose [competitor] if…', 'Choose Nomi if…'. Never 'Nomi is the best'.",
+  "numbersPolicy": "Spell out one through nine, use digits for 10+. Use digits for measurements, prices, and version numbers."
+}

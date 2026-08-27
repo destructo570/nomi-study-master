@@ -1,0 +1,18 @@
+{
+  "id": "brainscape",
+  "name": "Brainscape",
+  "url": "https://www.brainscape.com",
+  "audience": "Students wanting certified flashcard content and a confidence-based review model.",
+  "positioning": "Confidence-based spaced repetition flashcard platform with certified curated decks.",
+  "coreFeatures": ["Confidence-based repetition", "Curated 'certified' flashcard courses", "Custom decks", "Progress analytics"],
+  "strengths": ["Confidence-based rating is a thoughtful recall model", "Quality-certified content library", "Clean-focused flashcard UX"],
+  "weaknesses": ["Flashcard-only — no notes, mind maps, podcasts, or quizzes beyond cards", "Weak PDF/YouTube ingestion", "Less AI generation of full study sets"],
+  "recentAiFeatures": "AI-assisted card authoring; limited AI explanations.",
+  "pricingNote": "Free tier with Pro; do not quote prices.",
+  "commonPraise": "Confidence-based rating works well; certified decks are reliable; simple focused tool.",
+  "commonComplaints": "Flashcards only; paywalls on certified content; feels limited vs full study platforms.",
+  "integrations": ["Web", "iOS / Android"],
+  "documentation": "https://brainscape.com/help",
+  "pricingPage": "https://www.brainscape.com/pricing",
+  "positioningVsNomi": "Brainscape is a polished flashcard-and-confidence tool; Nomi is a full workflow that builds the cards from your own PDFs and lectures and adds quizzes, mind maps, podcasts, and a study guide — you start from material, not from a deck."
+}

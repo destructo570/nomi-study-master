@@ -1,0 +1,18 @@
+{
+  "id": "studyfetch",
+  "name": "StudyFetch",
+  "url": "https://www.studyfetch.com",
+  "audience": "Students who want an AI study suite across file types.",
+  "positioning": "AI study platform with flashcards, quizzes, notes, and a tutor from uploaded material.",
+  "coreFeatures": ["Auto flashcards from uploads", "Quizzes", "Notes", "AI tutor chat", "Spark.live video sessions"],
+  "strengths": ["Multi-artifact generation from uploads", "Includes a tutor chat", "Spark.live community study sessions"],
+  "weaknesses": ["No mind maps or podcasts in the core set", "Spaced repetition weaker than dedicated schedulers", "UI maturity / polish varies", "Less explicit source-grounding than NotebookLM"],
+  "recentAiFeatures": "AI tutor, auto-generation of multiple artifacts from a single upload.",
+  "pricingNote": "Free trial; paid plans; do not quote prices.",
+  "commonPraise": "Generates several artifacts from one upload; tutor chat handy; community sessions novel.",
+  "commonComplaints": "Some artifacts feel templated; depth varies by subject; mobile polish uneven.",
+  "integrations": ["Web"],
+  "documentation": "https://www.studyfetch.com/faq",
+  "pricingPage": "https://www.studyfetch.com/pricing",
+  "positioningVsNomi": "StudyFetch offers a multi-artifact suite from uploads; Nomi's spine is the ingest → structure → test → remember loop with spaced repetition built in, plus podcasts and a study guide, designed so material moves into long-term memory rather than being generated once and forgotten."
+}

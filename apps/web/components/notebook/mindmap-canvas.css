@@ -1,0 +1,67 @@
+.mindmap-theme {
+  --xy-background-pattern-dots-color-default: color-mix(in srgb, var(--muted-foreground) 22%, transparent);
+
+  --xy-edge-stroke-default: color-mix(in srgb, var(--muted-foreground) 40%, transparent);
+  --xy-edge-stroke-width-default: 1.5;
+  --xy-edge-stroke-selected-default: var(--primary);
+
+  --xy-connectionline-stroke-default: color-mix(in srgb, var(--muted-foreground) 55%, transparent);
+  --xy-connectionline-stroke-width-default: 1.5;
+
+  --xy-controls-button-background-color-default: var(--background);
+  --xy-controls-button-background-color-hover-default: var(--muted);
+  --xy-controls-button-color-default: var(--foreground);
+  --xy-controls-button-color-hover-default: var(--foreground);
+  --xy-controls-button-border-color-default: var(--border);
+
+  --xy-minimap-background-color-default: var(--background);
+  --xy-minimap-mask-background-color-default: color-mix(in srgb, var(--muted) 60%, transparent);
+  --xy-minimap-mask-stroke-color-default: var(--border);
+  --xy-minimap-node-background-color-default: var(--muted-foreground);
+
+  --xy-selection-background-color-default: color-mix(in srgb, var(--primary) 10%, transparent);
+  --xy-selection-border-default: 1px dashed var(--primary);
+
+  --xy-attribution-background-color-default: transparent;
+}
+
+.mindmap-theme .react-flow__controls,
+.mindmap-theme .react-flow__minimap {
+  border-radius: 12px;
+  box-shadow:
+    0 4px 12px -2px rgb(0 0 0 / 0.08),
+    0 2px 6px -2px rgb(0 0 0 / 0.06);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--background);
+}
+
+.mindmap-theme .react-flow__controls-button {
+  border-bottom: 1px solid var(--border);
+}
+
+.mindmap-theme .react-flow__controls-button:last-child {
+  border-bottom: none;
+}
+
+.mindmap-theme .react-flow__controls-button svg {
+  fill: currentColor;
+}
+
+.mindmap-theme .react-flow__edge-path {
+  stroke-linecap: round;
+}
+
+.mindmap-theme .react-flow__handle {
+  border-radius: 9999px;
+}
+
+.mindmap-theme .react-flow__handle-connecting {
+  background: var(--primary) !important;
+  border-color: var(--primary) !important;
+}
+
+/* Landing preview: slower animated edge flow on hover. */
+.mindmap-preview .react-flow__edge.animated path {
+  animation-duration: 2.5s;
+}

@@ -1,0 +1,422 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+@source "../../../apps/**/*.{ts,tsx}";
+@source "../../../components/**/*.{ts,tsx}";
+@source "../**/*.{ts,tsx}";
+
+@theme inline {
+    /* ElevenLabs raw color tokens (always available regardless of theme) */
+    --color-eggshell: #ffffff;
+    --color-powder: #f8f8f9;
+    --color-chalk: #e5e5e5;
+    --color-fog: #b1b0b0;
+    --color-gravel: #777169;
+    --color-slate: #a59f97;
+    --color-cinder: #575349;
+    --color-obsidian: #000000;
+    --color-signal-blue: #0447ff;
+    --color-ember: #ff4704;
+    --color-voice-spectrum: #3d75d8;
+
+    /* Semantic shadcn tokens (mapped to ElevenLabs in :root, dark variants in .dark) */
+    --font-heading: var(--font-display);
+    --color-sidebar-ring: var(--sidebar-ring);
+    --color-sidebar-border: var(--sidebar-border);
+    --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+    --color-sidebar-accent: var(--sidebar-accent);
+    --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+    --color-sidebar-primary: var(--sidebar-primary);
+    --color-sidebar-foreground: var(--sidebar-foreground);
+    --color-sidebar: var(--sidebar);
+    --color-chart-5: var(--chart-5);
+    --color-chart-4: var(--chart-4);
+    --color-chart-3: var(--chart-3);
+    --color-chart-2: var(--chart-2);
+    --color-chart-1: var(--chart-1);
+    --color-ring: var(--ring);
+    --color-input: var(--input);
+    --color-border: var(--border);
+    --color-destructive: var(--destructive);
+    --color-accent-foreground: var(--accent-foreground);
+    --color-accent: var(--accent);
+    --color-muted-foreground: var(--muted-foreground);
+    --color-muted: var(--muted);
+    --color-secondary-foreground: var(--secondary-foreground);
+    --color-secondary: var(--secondary);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-primary: var(--primary);
+    --color-popover-foreground: var(--popover-foreground);
+    --color-popover: var(--popover);
+    --color-card-foreground: var(--card-foreground);
+    --color-card: var(--card);
+    --color-foreground: var(--foreground);
+    --color-background: var(--background);
+
+    /* ElevenLabs radius scale: inputs 4 → cards 16 → modals 24 → pill 9999 */
+    --radius-sm: 4px;
+    --radius-md: 4px;
+    --radius-lg: 8px;
+    --radius-xl: 12px;
+    --radius-2xl: 16px;
+    --radius-3xl: 20px;
+    --radius-4xl: 24px;
+    --radius-pill: 9999px;
+
+    /* Hairline shadows from ElevenLabs */
+    --shadow-hairline: rgba(0, 0, 0, 0.4) 0px 0px 1px 0px, rgba(0, 0, 0, 0.04) 0px 2px 4px 0px;
+    --shadow-hairline-deep: rgba(0, 0, 0, 0.4) 0px 0px 1px 0px, rgba(0, 0, 0, 0.04) 0px 4px 4px 0px;
+    --shadow-pill: rgba(0, 0, 0, 0.06) 0px 0px 0px 1px, rgba(0, 0, 0, 0.04) 0px 1px 2px 0px, rgba(0, 0, 0, 0.04) 0px 2px 4px 0px;
+    --shadow-inset-hairline: rgba(0, 0, 0, 0.075) 0px 0px 0px 0.5px inset;
+
+    --font-sans: var(--font-sans);
+    --font-display: var(--font-display);
+    --font-serif: var(--font-serif);
+    --font-mono: var(--font-mono);
+    --font-brand: var(--font-brand);
+}
+
+:root {
+    /* ElevenLabs surfaces */
+    --background: #ffffff;          /* Eggshell — page ground */
+    --foreground: #32373c;          /* Obsidian — primary text */
+    --card: #ffffff;                /* Card White — pops off eggshell */
+    --card-foreground: #32373c;
+    --popover: #ffffff;
+    --popover-foreground: #32373c;
+    --primary: #32373c;             /* CTA fill */
+    --primary-foreground: #ffffff;  /* Eggshell on primary */
+    --secondary: #f8f8f9;           /* Powder */
+    --secondary-foreground: #32373c;
+    --muted: #f8f8f9;               /* Powder for hover surfaces */
+    --muted-foreground: #777169;    /* Gravel — secondary text */
+    --accent: #f8f8f9;
+    --accent-foreground: #32373c;
+    --destructive: oklch(0.577 0.245 27.325);
+    --border: #e5e5e5;              /* Chalk — universal border */
+    --input: #e5e5e5;
+    --ring: #b1b0b0;                /* Fog — focus ring */
+    --chart-1: #32373c;
+    --chart-2: #777169;
+    --chart-3: #a59f97;
+    --chart-4: #b1b0b0;
+    --chart-5: #e5e5e5;
+    --radius: 4px;                  /* Inputs 4px per ElevenLabs */
+    --sidebar: #fcfcfc;             /* Faint blue-tinted sidebar */
+    --sidebar-foreground: #32373c;
+    --sidebar-primary: #32373c;
+    --sidebar-primary-foreground: #ffffff;
+    --sidebar-accent: #f6f6f6;      /* Faint blue hover */
+    --sidebar-accent-foreground: #32373c;
+    --sidebar-border: #f3f6fb;
+    --sidebar-ring: #d3dae6;
+}
+
+.dark {
+    --background: #161617;
+    --foreground: #eaeaea;
+    --card: #27272a;
+    --card-foreground: #eaeaea;
+    --popover: #1d1d1f;
+    --popover-foreground: #eaeaea;
+    --primary: #32373c;
+    --primary-foreground: #ffffff;
+    --secondary: #27272a;
+    --secondary-foreground: #eaeaea;
+    --muted: #27272a;
+    --muted-foreground: #a1a1aa;
+    --accent: #3f3f46;
+    --accent-foreground: #eaeaea;
+    --destructive: oklch(0.704 0.191 22.216);
+    --border: rgba(38, 38, 42, 0.43);
+    --input: rgba(38, 38, 42, 0.43);
+    --ring: #525252;
+    --chart-1: #eaeaea;
+    --chart-2: #a1a1aa;
+    --chart-3: #71717a;
+    --chart-4: #3f3f46;
+    --chart-5: #27272a;
+    --sidebar: #161617;
+    --sidebar-foreground: #eaeaea;
+    --sidebar-primary: #eaeaea;
+    --sidebar-primary-foreground: #141413;
+    --sidebar-accent: #27272a;
+    --sidebar-accent-foreground: #eaeaea;
+    --sidebar-border: rgba(38, 38, 42, 0.43);
+    --sidebar-ring: #525252;
+}
+
+::selection {
+    color: #141413;
+    background: #d4f4dd;
+}
+
+.textLayer {
+    mix-blend-mode: multiply;
+}
+
+.textLayer ::selection,
+.textLayer span::selection {
+    color: transparent;
+    background: #d4f4dd;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+    }
+  html {
+    scrollbar-gutter: stable;
+    scroll-behavior: smooth;
+    scroll-padding-top: 128px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    }
+  body {
+    @apply bg-background text-foreground;
+    }
+
+  /* Thin, subtle native scrollbars */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: color-mix(in srgb, var(--muted-foreground) 25%, transparent) transparent;
+  }
+  *::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: color-mix(in srgb, var(--muted-foreground) 25%, transparent);
+    border-radius: 9999px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    min-height: 40px;
+  }
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: color-mix(in srgb, var(--muted-foreground) 55%, transparent);
+  }
+  *::-webkit-scrollbar-thumb:active {
+    background-color: color-mix(in srgb, var(--muted-foreground) 70%, transparent);
+  }
+  *::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+}
+@layer components {
+  .notebook-editor {
+    @apply space-y-3 leading-relaxed;
+    font-size: 15px;
+  }
+  .notebook-editor h1 {
+    @apply font-heading text-3xl font-semibold tracking-tight mt-6 mb-2;
+  }
+  .notebook-editor h2 {
+    @apply font-heading text-2xl font-semibold tracking-tight mt-5 mb-2;
+  }
+  .notebook-editor h3 {
+    @apply font-heading text-xl font-semibold tracking-tight mt-4 mb-1.5;
+  }
+  .notebook-editor p {
+    @apply leading-relaxed;
+  }
+  .notebook-editor ul {
+    @apply list-disc pl-6 space-y-1;
+  }
+  .notebook-editor ol {
+    @apply list-decimal pl-6 space-y-1;
+  }
+  .notebook-editor pre {
+    @apply rounded-xl bg-muted p-4 text-sm font-mono overflow-x-auto;
+  }
+  .notebook-editor code {
+    @apply rounded bg-muted px-1.5 py-0.5 font-mono text-[0.9em];
+  }
+  .notebook-editor pre code {
+    @apply bg-transparent p-0;
+  }
+  /* Let our pre wrapper own background + padding; hljs theme only colors the
+     token spans. Without this, github.css adds its own bg + 1em padding and
+     the block ends up nested. */
+  .notebook-editor pre code.hljs {
+    @apply bg-transparent p-0;
+  }
+  .notebook-editor blockquote {
+    @apply border-l-2 border-foreground/20 pl-4 italic text-muted-foreground;
+  }
+  .notebook-editor a {
+    @apply underline underline-offset-4 hover:text-foreground;
+  }
+  .notebook-editor p.is-editor-empty:first-child::before,
+  .notebook-editor h1.is-editor-empty:first-child::before {
+    content: attr(data-placeholder);
+    @apply text-muted-foreground pointer-events-none float-left h-0;
+  }
+  .notebook-editor .tiptap-mathematics-render {
+    @apply inline-flex items-center overflow-x-auto rounded px-1;
+  }
+  .notebook-editor .tiptap-mathematics-render--editable {
+    @apply cursor-text;
+  }
+  .notebook-editor .tiptap-mathematics-render[data-type="block-math"] {
+    @apply mx-auto my-2 w-fit max-w-full block py-1;
+  }
+  .notebook-editor .inline-math-error,
+  .notebook-editor .block-math-error {
+    @apply text-red-500;
+  }
+}
+
+@layer components {
+  .delta-pill-up {
+    @apply inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-xs font-medium bg-emerald-500/15 text-emerald-700 dark:text-emerald-300;
+  }
+  .delta-pill-down {
+    @apply inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-xs font-medium bg-pink-500/15 text-pink-700 dark:text-pink-300;
+  }
+}
+
+@layer components {
+  [data-slot="sidebar-menu-button"][data-active="true"],
+  [data-slot="sidebar-menu-sub-button"][data-active="true"] {
+    @apply ring-1 ring-foreground/10 shadow-sm;
+    background-color: #ebe8e3 !important;
+  }
+  [data-slot="sidebar-group-label"] {
+    @apply uppercase tracking-wider text-[10px] text-sidebar-foreground/25;
+  }
+}
+
+@layer components {
+  .chat-stream-token,
+  .chat-stream-md > * {
+    animation: chat-stream-token-in 220ms ease-out both;
+  }
+  @keyframes chat-stream-token-in {
+    from {
+      opacity: 0;
+      filter: blur(1px);
+    }
+    to {
+      opacity: 1;
+      filter: blur(0);
+    }
+  }
+  .katex-display {
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0.25rem 0;
+  }
+}
+
+@layer components {
+  .text-shimmer {
+    background-image: linear-gradient(
+      90deg,
+      var(--muted-foreground) 0%,
+      var(--muted-foreground) 35%,
+      var(--foreground) 50%,
+      var(--muted-foreground) 65%,
+      var(--muted-foreground) 100%
+    );
+    background-size: 200% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    animation: text-shimmer 2.4s linear infinite;
+  }
+  @keyframes text-shimmer {
+    from {
+      background-position: 200% 0;
+    }
+    to {
+      background-position: -200% 0;
+    }
+  }
+}
+
+@layer components {
+  .vercel-spinner {
+    position: relative;
+    display: inline-block;
+    color: currentColor;
+  }
+  .vercel-spinner > span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 8%;
+    height: 28%;
+    border-radius: 9999px;
+    background: currentColor;
+    transform-origin: 50% 175%;
+    animation: vercel-spinner-fade 1.2s linear infinite;
+  }
+  @keyframes vercel-spinner-fade {
+    0%, 39%, 100% { opacity: 0.15; }
+    40% { opacity: 1; }
+  }
+}
+
+@layer components {
+  .marquee-track {
+    display: flex;
+    width: max-content;
+    animation: marquee-scroll 40s linear infinite;
+  }
+  @keyframes marquee-scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+@layer components {
+  .legal-prose {
+    @apply text-base leading-relaxed text-foreground;
+  }
+  .legal-prose > * + * {
+    @apply mt-4;
+  }
+  .legal-prose h2 {
+    @apply font-display text-2xl font-semibold tracking-tight mt-12 mb-2;
+  }
+  .legal-prose h3 {
+    @apply font-heading text-lg font-semibold tracking-tight mt-8 mb-1;
+  }
+  .legal-prose p {
+    @apply leading-relaxed text-muted-foreground;
+  }
+  .legal-prose strong {
+    @apply text-foreground font-semibold;
+  }
+  .legal-prose ul {
+    @apply list-disc pl-6 space-y-2 text-muted-foreground;
+  }
+  .legal-prose ol {
+    @apply list-decimal pl-6 space-y-2 text-muted-foreground;
+  }
+  .legal-prose li::marker {
+    color: var(--muted-foreground);
+  }
+  .legal-prose a {
+    @apply text-foreground underline underline-offset-4 hover:opacity-70;
+  }
+  .legal-prose hr {
+    @apply my-10 border-border;
+  }
+  .legal-prose blockquote {
+    @apply border-l-2 border-foreground/20 pl-4 italic text-muted-foreground;
+  }
+  .legal-prose code {
+    @apply rounded bg-muted px-1.5 py-0.5 font-mono text-[0.9em];
+  }
+}

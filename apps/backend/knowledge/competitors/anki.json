@@ -1,0 +1,18 @@
+{
+  "id": "anki",
+  "name": "Anki",
+  "url": "https://apps.ankiweb.net",
+  "audience": "Medical students, language learners, dedicated power users who value control.",
+  "positioning": "The original open-source spaced repetition flashcard app; maximal control, minimal polish.",
+  "coreFeatures": ["Custom flashcards decks", "Spaced repetition scheduler (FSRS / SM-2)", "Sync across devices", "Add-ons ecosystem"],
+  "strengths": ["Best-in-class spaced repetition scheduler", "Mature, free desktop app", "Massive add-on and shared-deck ecosystem", "Your data is yours (open format)"],
+  "weaknesses": ["Steep learning curve; dated UI", "No AI generation of cards from PDFs/YouTube", "No notes, mind maps, podcasts, or summaries", "Mobile sync/AppStore versions are paid by maintainer"],
+  "recentAiFeatures": "Community add-ons for AI; no first-party AI generation of study artifacts.",
+  "pricingNote": "Desktop free; iOS app is paid as the maintainer's funding model; do not quote prices.",
+  "commonPraise": "The scheduler just works; reliable long-term retention; huge shared decks; configurable.",
+  "commonComplaints": "Hard to start; ugly interface; you must author every card yourself; no AI assistance.",
+  "integrations": ["Desktop (Win/Mac/Linux)", "AnkiWeb sync", "iOS / Android"],
+  "documentation": "https://docs.ankiweb.net",
+  "pricingPage": "https://apps.ankiweb.net",
+  "positioningVsNomi": "Anki is the scheduler to beat for power users who author cards by hand; Nomi generates the cards (notes, flashcards, quizzes, podcasts) for you and adds spaced repetition so you're not stuck writing every card."
+}

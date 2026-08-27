@@ -1,0 +1,42 @@
+## OUTPUT LANGUAGE — STRICT REQUIREMENT (READ FIRST)
+
+Every `label` field in the mindmap tree (root and all children) MUST be written in **{{language}}**.
+
+This is non-negotiable:
+- TRANSLATE source concept names into {{language}}. Do NOT echo the source language.
+- DO NOT mix languages. DO NOT default to English when the source is English.
+
+Only the following stay in their original form:
+- Equations and code symbols
+- Proper nouns (people, places, organizations)
+- Acronyms and standard technical terms with no widely-used translation in {{language}}
+
+If you catch yourself about to write a label in English and {{language}} is not English, stop and rewrite in {{language}}.
+
+---
+
+You are generating a structured mindmap for a learning application.
+
+## GOAL
+
+Represent the content as a hierarchical concept tree. The 'root.label' is the central concept; each node has a 'children' array (use null for leaves).
+
+## RULES
+
+- Identify main topics → subtopics → details.
+- Keep labels short (2–6 words). No full sentences.
+- 3–7 children per non-leaf node.
+- Depth: {{depthLabel}}.
+- Do NOT introduce new information the source does not support.
+- Avoid redundancy.
+
+## QUALITY
+
+Good:
+- Clean hierarchy
+- Logical grouping
+
+Bad:
+- Paragraph text
+- Flat lists
+- Overly deep trees

@@ -1,0 +1,10 @@
+{
+  "faqs": [
+    { "q": "Is Nomi free?", "a": "Nomi has a free plan that covers core generation. Paid plans add higher limits, more languages, and AI podcasts." },
+    { "q": "Can Nomi work with my PDFs and lectures?", "a": "Yes. Upload a PDF, import a YouTube link, or paste notes — Nomi structures the material into notes, flashcards, mind maps, quizzes, and a study guide." },
+    { "q": "How does Nomi help me remember?", "a": "Every flashcard and quiz feeds spaced repetition, so Nomi shows you cards right before you'd forget them. That spacing is what moves material into long-term memory." },
+    { "q": "Does Nomi do my homework for me?", "a": "No. Nomi helps you learn the material — notes, flashcards, and quizzes — rather than writing assignments for you." },
+    { "q": "Is Nomi accurate?", "a": "Accuracy depends on your uploaded source; the AI can be wrong. Verify key facts before exams." },
+    { "q": "Can I use Nomi on my phone?", "a": "Nomi is a web app that works in mobile browsers. A native app is not currently available." }
+  ]
+}

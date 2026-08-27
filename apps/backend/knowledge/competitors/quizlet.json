@@ -1,0 +1,18 @@
+{
+  "id": "quizlet",
+  "name": "Quizlet",
+  "url": "https://quizlet.com",
+  "audience": "High school and college students; broad, mainstream.",
+  "positioning": "Large legacy flashcard library; primarily a flashcard + test platform.",
+  "coreFeatures": ["Flashcard sets (user-created and shared)", "Practice test mode", "Spaced repetition (limited)", "Diagram sets"],
+  "strengths": ["Huge shared library of user-made sets", "Strong brand recognition with students", "Simple, familiar interface", "Mobile app"],
+  "weaknesses": ["Weak PDF/YouTube ingestion", "No AI notes, mind maps, or podcasts", "Memory mode locked behind paywall for many users", "Generation quality varies for AI features"],
+  "recentAiFeatures": "AI-generated flashcard sets and explanations; Q-Chat tutor — conversational study helper.",
+  "pricingNote": "Subscription tiers exist; do not quote prices. Refer readers to quizlet.com for current pricing.",
+  "commonPraise": "Easy to use; large shared library; mobile app convenient for reviewing on the go.",
+  "commonComplaints": "Paywall to access core study modes; ads on free tier; AI-generated cards can be inaccurate.",
+  "integrations": ["iOS / Android apps", "Web"],
+  "documentation": "https://quizlet.com/help",
+  "pricingPage": "https://quizlet.com/upgrade",
+  "positioningVsNomi": "Quizlet is flashcard-first and library-driven; Nomi is workflow-first and ingest-driven — Nomi turns your own PDFs and lectures into structured material + spaced repetition rather than relying on shared decks."
+}

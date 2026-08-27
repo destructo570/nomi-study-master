@@ -1,0 +1,18 @@
+{
+  "id": "gizmo",
+  "name": "Gizmo",
+  "url": "https://gizmo.ai",
+  "audience": "Students wanting fast AI flashcards from content.",
+  "positioning": "AI flashcard app focused on speed and ease of generation.",
+  "coreFeatures": ["AI flashcards from text", "Spaced repetition review", "Import from existing decks", "Mobile-friendly"],
+  "strengths": ["Fast card generation", "Simple focused UX", "Mobile-leaning design"],
+  "weaknesses": ["Flashcard-only surface", "No notes, mind maps, podcasts, or quizzes", "Limited ingestion beyond text/decks"],
+  "recentAiFeatures": "AI-generated flashcards; AI explanations.",
+  "pricingNote": "Free with paid; do not quote prices.",
+  "commonPraise": "Fast to make cards; clean mobile UX; quick win for cramming.",
+  "commonComplaints": "Narrow feature set; depth limited for serious subjects; AI quality varies.",
+  "integrations": ["Web", "iOS / Android"],
+  "documentation": "https://gizmo.ai/faq",
+  "pricingPage": "https://gizmo.ai/pricing",
+  "positioningVsNomi": "Gizmo is a fast flashcard maker; Nomi generates a complete study set — notes, quizzes, mind maps, podcasts, study guide plus spaced repetition — from the same source so you study more than cards."
+}

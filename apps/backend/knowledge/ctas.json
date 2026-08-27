@@ -1,0 +1,15 @@
+{
+  "primary": { "text": "Try Nomi free", "href": "#signup" },
+  "byType": {
+    "feature": { "text": "Generate {topic} free", "focus": "the feature" },
+    "blog": { "text": "Study smarter with Nomi free", "focus": "the workflow" },
+    "alternative": { "text": "Switch to Nomi free", "focus": "the switch" },
+    "comparison": { "text": "See Nomi side by side", "focus": "the choice" },
+    "tutorial": { "text": "Do this in Nomi free", "focus": "the how-to" },
+    "faq": { "text": "Try Nomi free", "focus": "answers and the tool" },
+    "landing": { "text": "Start studying with Nomi", "focus": "the platform" },
+    "doc": { "text": "Try this in Nomi", "focus": "the feature" },
+    "usecase": { "text": "Try this use case in Nomi", "focus": "the workflow" },
+    "programmatic": { "text": "Try Nomi free", "focus": "the platform" }
+  }
+}

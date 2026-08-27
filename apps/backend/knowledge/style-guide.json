@@ -1,0 +1,16 @@
+{
+  "proseRules": [
+    { "rule": "Sentence length", "guideline": "Most sentences under 25 words. Break any longer." },
+    { "rule": "Paragraph length", "guideline": "2-4 sentences. One idea per paragraph." },
+    { "rule": "Reading level", "guideline": "Aim for a Flesch Reading Ease of 55-70 (plain English for a student). Avoid jargon; when a term is necessary, define it in parentheses." },
+    { "rule": "Voice", "guideline": "Active voice. The subject acts, not is-acted-upon." },
+    { "rule": "Contractions", "guideline": "Contractions are fine (you'll, don't, it's). They read more human." },
+    { "rule": "Person", "guideline": "Second person ('you') addressing a student." },
+    { "rule": "Examples", "guideline": "Concrete, student-relatable examples over abstract claims." }
+  ],
+  "renderingRules": [
+    { "rule": "Markdown", "guideline": "Body is Markdown. One H1, H2s per section. Tables use pipe syntax. Code in fenced blocks." },
+    { "rule": "Internal links", "guideline": "Use the suggested internal links verbatim; do not invent new Nomi slugs." },
+    { "rule": "External links", "guideline": "Only cite real, authoritative URLs. If you cannot verify one, omit the external reference." }
+  ]
+}

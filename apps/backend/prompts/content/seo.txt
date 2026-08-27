@@ -1,0 +1,12 @@
+## SEO FIELDS — fill the `seo` object carefully
+
+- `title`: 50-65 chars, includes the primary topic/keyword near the front. No clickbait.
+- `slug`: lowercase, hyphenated, 2-6 words, no stop words, no trailing slash.
+- `metaDescription`: 120-158 chars, one clear sentence with the primary keyword, ends with the value to the student. No keyword stuffing.
+- `h1`: distinct from the title. H1 can be a fuller sentence; the title is the SERP headline.
+- `relatedKeywords` / `semanticKeywords`: 4-10 real terms a student would use around this topic. Do not list the primary keyword twice.
+- `targetAudience`: one concrete audience from the product context's audience list.
+- `searchIntent`: informational | commercial | transactional | navigational — pick one honestly.
+- `readingMinutes`: integer 2-15, honest given the body length.
+
+Do not trade honesty for keyword density. A natural sentence beats a stuffed one for both the reader and modern search.

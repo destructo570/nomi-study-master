@@ -1,0 +1,198 @@
+.aic-demo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 24px 16px 16px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+}
+
+.aic-chat {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 440px;
+}
+
+.aic-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.aic-row--user {
+  justify-content: flex-end;
+}
+
+.aic-row--ai {
+  justify-content: flex-start;
+}
+
+/* ---- Bubbles ---- */
+.aic-bubble {
+  max-width: 82%;
+  padding: 9px 13px;
+  border-radius: 16px;
+  font-size: 13px;
+  line-height: 1.55;
+  box-sizing: border-box;
+}
+
+.aic-bubble--user {
+  background: rgba(50, 55, 60, 0.5);
+  color: #ffffff;
+  border-bottom-right-radius: 5px;
+}
+
+.aic-bubble--ai {
+  background: #f3f3f5;
+  color: #111111;
+  border-bottom-left-radius: 5px;
+  min-height: 38px;
+  min-width: 96px;
+}
+
+/* ---- Equations ---- */
+.aic-eq {
+  font-family: "Cambria Math", Cambria, Georgia, "Times New Roman", serif;
+  font-style: italic;
+  white-space: nowrap;
+}
+
+.aic-bubble--user .aic-eq {
+  margin: 0 1px;
+}
+
+.aic-answer .aic-eq {
+  margin: 0 2px;
+  color: inherit;
+}
+
+/* Stacked fraction (quadratic formula) */
+.aic-frac {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: middle;
+  margin: 0 4px;
+  font-family: "Cambria Math", Cambria, Georgia, serif;
+  font-style: italic;
+  font-size: 11px;
+  line-height: 1.15;
+  color: inherit;
+}
+
+.aic-frac-den {
+  border-top: 1px solid currentColor;
+  padding-top: 1px;
+}
+
+/* ---- Thinking state ---- */
+.aic-thinking {
+  display: inline-flex;
+  align-items: center;
+  color: #8b8b94;
+  font-size: 13px;
+}
+
+.aic-dot {
+  width: 4px;
+  height: 4px;
+  margin-left: 3px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.aic-dot:nth-child(2) {
+  margin-left: 4px;
+}
+
+/* While active: shimmer the word + bounce the dots */
+.aic-thinking.is-animating {
+  background: linear-gradient(90deg, #b8b8c0 25%, #475569 50%, #b8b8c0 75%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: aic-shimmer 1.1s linear infinite;
+}
+
+.aic-thinking.is-animating .aic-dot {
+  background: #475569;
+  animation: aic-bounce 1.1s ease-in-out infinite;
+}
+
+.aic-thinking.is-animating .aic-dot:nth-child(3) {
+  animation-delay: 0.15s;
+}
+
+.aic-thinking.is-animating .aic-dot:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+@keyframes aic-shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+@keyframes aic-bounce {
+  0%, 100% { transform: translateY(0); opacity: 0.5; }
+  50% { transform: translateY(-3px); opacity: 1; }
+}
+
+/* ---- Streaming answer ---- */
+.aic-answer {
+  display: inline;
+  line-height: 1.9;
+}
+
+.aic-tok {
+  display: inline;
+  animation: aic-fade-in 0.25s ease-out both;
+}
+
+.aic-frac.aic-tok {
+  display: inline-flex;
+}
+
+@keyframes aic-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.aic-caret {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  margin-left: 1px;
+  vertical-align: text-bottom;
+  background: #475569;
+  animation: aic-blink 0.9s steps(1) infinite;
+}
+
+@keyframes aic-blink {
+  0%, 50% { opacity: 1; }
+  50.01%, 100% { opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .aic-thinking.is-animating,
+  .aic-thinking.is-animating .aic-dot,
+  .aic-tok,
+  .aic-caret {
+    animation: none;
+  }
+  .aic-thinking.is-animating {
+    -webkit-text-fill-color: currentColor;
+    color: #475569;
+  }
+}
+
+@media (max-width: 480px) {
+  .aic-demo {
+    padding: 18px 14px 16px;
+  }
+}

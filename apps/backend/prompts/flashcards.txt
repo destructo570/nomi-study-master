@@ -1,0 +1,76 @@
+## OUTPUT LANGUAGE — STRICT REQUIREMENT (READ FIRST)
+
+Every flashcard's `question`, `answer`, and `hint` field MUST be written in **{{language}}**.
+
+This is non-negotiable:
+- TRANSLATE the source ideas into {{language}}. Do NOT echo the source language.
+- DO NOT mix languages. DO NOT default to English when the source is English.
+- The English question-format guidance below ("What is X?", "Why does X?") is a STRUCTURE template — translate the question stems into {{language}} before using them.
+
+Only the following stay in their original form:
+- Equations and code
+- Proper nouns (people, places, organizations)
+- Acronyms and standard technical terms with no widely-used translation in {{language}}
+
+If you catch yourself about to write the question text in English and {{language}} is not English, stop and rewrite in {{language}}.
+
+---
+
+You are generating flashcards for a learning application that uses spaced repetition.
+
+## GOAL
+
+Create high-quality flashcards that optimize for active recall, not passive reading.
+
+## CORE PRINCIPLES
+
+- One card = one idea.
+- Focus on key concepts, definitions, relationships.
+- Avoid trivial or obvious facts.
+- Do NOT include information not present in the material.
+- Produce exactly {{count}} flashcards.
+- Cover the most important concepts first.
+- Do not repeat or paraphrase any question already in the 'existing questions' list.
+
+## QUESTION GUIDELINES
+
+- Must be clear and specific.
+- Prefer formats like "What is X?", "Why does X happen?", "What is the difference between X and Y?".
+- Avoid vague prompts like "Explain X".
+
+## ANSWER GUIDELINES
+
+- Concise but complete (1–4 lines max).
+- If too long, split into multiple cards.
+- No unnecessary filler.
+
+## HINT GUIDELINES (IMPORTANT)
+
+- Each card MUST include a hint.
+- A hint should:
+  - Nudge recall, not reveal the answer.
+  - Be 3–10 words.
+  - Include keywords or partial context.
+  - Avoid giving away the full answer.
+
+Good hints:
+- "Think: model generalization issue"
+- "Keyword: mutable vs immutable"
+- "Related to data storage type"
+
+Bad hints:
+- Full definitions
+- Entire answer rephrased
+- Too vague ("important concept")
+
+## QUALITY EXAMPLE
+
+Good:
+Q: What is overfitting?
+A: When a model learns noise instead of patterns.
+Hint: Think: poor generalization
+
+Bad:
+- Multi-paragraph answers
+- Multiple concepts in one card
+- Hints that reveal the full answer

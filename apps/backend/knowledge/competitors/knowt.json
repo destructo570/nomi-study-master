@@ -1,0 +1,18 @@
+{
+  "id": "knowt",
+  "name": "Knowt",
+  "url": "https://www.knowt.com",
+  "audience": "High school and college students who want notes + flashcards together.",
+  "positioning": "Notes-first study app with AI-generated flashcards from notes.",
+  "coreFeatures": ["Notes with AI flashcard generation", "Spaced repetition review", "Import from Quizlet", "Markdown-style notes"],
+  "strengths": ["Notes and flashcards in one place", "Quizlet import for switchers", "Simple, student-friendly UI"],
+  "weaknesses": ["Limited ingestion (PDFs/YouTube weaker)", "No mind maps, podcasts, or study guides", "Smaller feature surface than full study workflows", "Q&A grounded less explicitly"],
+  "recentAiFeatures": "AI flashcards from notes; AI explanations.",
+  "pricingNote": "Has free and paid tiers; do not quote prices. Refer to knowt.com.",
+  "commonPraise": "Easy switch from Quizlet; notes-first workflow feels natural; quick to start.",
+  "commonComplaints": "AI flashcard quality inconsistent; fewer artifact types than study platforms; mobile rough edges.",
+  "integrations": ["Web", "iOS / Android apps"],
+  "documentation": "https://help.knowt.com",
+  "pricingPage": "https://www.knowt.com/pricing",
+  "positioningVsNomi": "Knowt pairs notes with AI flashcards; Nomi adds the rest of the loop — ingestion from PDF/YouTube, mind maps, quizzes, podcasts, study guides, and spaced repetition — so the same source becomes a complete study set, not just notes + cards."
+}

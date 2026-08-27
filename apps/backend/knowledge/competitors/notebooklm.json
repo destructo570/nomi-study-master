@@ -1,0 +1,18 @@
+{
+  "id": "notebooklm",
+  "name": "NotebookLM",
+  "url": "https://notebooklm.google",
+  "audience": "Researchers, students, knowledge workers comfortable with Google's ecosystem.",
+  "positioning": "Google's source-grounded AI notebook; emphasises grounding in uploaded sources.",
+  "coreFeatures": ["AI notes from sources", "Source-grounded Q&A", "Audio Overview (podcast-style)", "Summaries"],
+  "strengths": ["Strong source-grounding; answers cite the uploaded material", "Audio Overview is conversational and engaging", "Free during its current phase", "Google backing and polish"],
+  "weaknesses": ["No spaced repetition or flashcard review loop", "No mind maps", "No quizzes with scoring", "Generation limited to fewer artifact types than Nomi's study loop", "One notebook per source-set; less cross-notebook workflow"],
+  "recentAiFeatures": "Audio Overviews, source-grounded chat, note suggestions.",
+  "pricingNote": "Free with a Google account; premium features tied to Google AI subscriptions — do not quote prices.",
+  "commonPraise": "Source grounding makes answers trustworthy; the podcast feature is delightful; clean interface.",
+  "commonComplaints": "No real study / review loop; feels more like a research tool than a study tool; can't test yourself easily.",
+  "integrations": ["Google Drive", "Google Workspace (preview/grounding)"],
+  "documentation": "https://notebooklm.google/help",
+  "pricingPage": "https://one.google.com/about/ai-premium",
+  "positioningVsNomi": "NotebookLM is a research notebook grounded in sources; Nomi is a study loop — it ingests the same sources and adds flashcards, quizzes, spaced repetition, podcasts, and a study guide so material moves into long-term memory, not just summary."
+}

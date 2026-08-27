@@ -1,0 +1,126 @@
+.hello-burst-demo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px 16px 16px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+}
+
+/* Illustration only — no card chrome, border, or shadow. */
+.hello-burst-stage {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 80px;
+}
+
+.hello-burst-orbit {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+/* Dashed circular axis */
+.hello-burst-axis {
+  position: absolute;
+  inset: 0;
+  border: 1.5px dashed #d8d8de;
+  border-radius: 50%;
+}
+
+.hello-burst-ring {
+  position: absolute;
+  inset: 0;
+}
+
+.hello-burst-stage.is-playing .hello-burst-ring {
+  animation: hello-burst-orbit-spin 22s linear infinite;
+}
+
+@keyframes hello-burst-orbit-spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Each chip is a zero-size anchor pushed out onto the dashed circle. The
+   rotate(--a) … rotate(-a) keeps the pill upright relative to the ring. */
+.hello-burst-chip {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  transform: rotate(var(--a)) translate(75px) rotate(calc(-1 * var(--a)));
+}
+
+.hello-burst-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  translate: -50% -50%;
+  padding: 5px 11px;
+  border-radius: 999px;
+  background: var(--bg, #f6f6f7);
+  border: 1px solid var(--bd, #ececef);
+  color: var(--fg, #8b8b94);
+  font-size: 12.5px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Counter-rotate the pills so the text stays level while the ring spins. */
+.hello-burst-stage.is-playing .hello-burst-pill {
+  animation: hello-burst-pill-upright 22s linear infinite;
+}
+
+@keyframes hello-burst-pill-upright {
+  to { rotate: -360deg; }
+}
+
+/* ---- Center globe ---- */
+.hello-burst-globe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  color: #2563eb;
+  transform-origin: center;
+}
+
+.hello-burst-globe svg {
+  width: 100%;
+  height: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hello-burst-stage.is-playing .hello-burst-ring,
+  .hello-burst-stage.is-playing .hello-burst-pill {
+    animation: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .hello-burst-orbit {
+    width: 130px;
+    height: 130px;
+  }
+
+  .hello-burst-chip {
+    transform: rotate(var(--a)) translate(65px) rotate(calc(-1 * var(--a)));
+  }
+
+  .hello-burst-globe {
+    width: 48px;
+    height: 48px;
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "remnote",
+  "name": "RemNote",
+  "url": "https://www.remnote.com",
+  "audience": "Knowledge-work students and researchers; outliner-style learners.",
+  "positioning": "Outliner notes where every bullet can become a flashcard — notes and recall in one tool.",
+  "coreFeatures": ["Outliner notes", "Bidirectional notes-to-flashcards", "Spaced repetition", "Concept linking / knowledge graph"],
+  "strengths": ["Outline-as-flashcards is elegant for structured thinkers", "Concept linking creates a real knowledge graph", "Strong import options", "PDF annotation"],
+  "weaknesses": ["Outliner paradigm has a learning curve", "No AI-generated podcasts or quizzes with scor", "AI generation narrower than full study platforms", "UI can feel dense for casual students"],
+  "recentAiFeatures": "AI assistant and AI-generated flashcards; AI explanations.",
+  "pricingNote": "Free tier with paid Pro; do not quote prices.",
+  "commonPraise": "Notes-to-cards model is powerful; great for structured subjects; concept links help.",
+  "commonComplaints": "Steep learning curve; cluttered UI; AI features gated; mobile experience limited.",
+  "integrations": ["Web", "Desktop", "Mobile apps"],
+  "documentation": "https://help.remnote.com",
+  "pricingPage": "https://www.remnote.com/pricing",
+  "positioningVsNomi": "RemNote is an outliner's tool where notes become cards; Nomi is an ingest-driven workflow — it turns your PDFs and YouTube lectures into a ready-made set of notes, flashcards, quizzes, mind maps, and a podcast, with less manual structuring."
+}

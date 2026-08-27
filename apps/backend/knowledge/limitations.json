@@ -1,0 +1,16 @@
+{
+  "limitations": [
+    "Nomi is a study tool, not a tutor that guarantees grades.",
+    "Nomi does not write essays or do homework for you — it helps you learn the material.",
+    "Accuracy depends on your uploaded source; Nomi can be wrong — verify before exams.",
+    "No live human tutor; the AI chat is grounded in your notebook, not the open web.",
+    "A native mobile app is not currently available (Nomi is a web app)."
+  ],
+  "unsupportedClaims": [
+    "Do not claim Nomi guarantees any grade outcome.",
+    "Do not claim Nomi replaces a teacher or human tutor.",
+    "Do not claim Nomi is 100% accurate.",
+    "Do not claim Nomi can read paywalled or private material the user cannot access.",
+    "Do not claim features Nomi does not have — only reference ids in capabilities.json."
+  ]
+}

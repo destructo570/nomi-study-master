@@ -1,0 +1,11 @@
+{
+  "name": "Nomi",
+  "domain": "nomi.com",
+  "tagline": "Turn anything into something you actually remember.",
+  "pitch": "Nomi is an AI study platform that turns notes, PDFs, and videos into flashcards, notes, mind maps, quizzes, podcasts, and study guides — then quizzes you on them with spaced repetition so knowledge sticks.",
+  "positioning": "Nomi is not a generic chatbot. It is an end-to-end study workflow: ingest material (PDF / YouTube / notes / photo) → Nomi structures it (notes, summary, mind map) → Nomi tests you (flashcards, quizzes, spaced repetition) and even explains it back as a podcast. The value is retention + time saved, not 'AI magic'.",
+  "audience": ["College students", "University students", "High school students", "Self-learners"],
+  "foundedNotes": "Do not invent founders, founding year, funding amounts, or company history. If asked, say the information is not public.",
+  "freeTier": "A free plan covers core generation (notes, flashcards, quizzes, summaries, mind maps). Paid plans add higher usage limits, AI podcasts, and additional languages.",
+  "pricingNote": "Do not quote specific prices in generated content. Refer readers to the pricing page on nomi.com."
+}

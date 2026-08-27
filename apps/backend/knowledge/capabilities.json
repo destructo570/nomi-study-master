@@ -1,0 +1,92 @@
+{
+  "features": [
+    {
+      "id": "ai-notes",
+      "name": "AI Notes",
+      "blurb": "Clean, structured notes generated from your source material.",
+      "slug": "/ai-notes",
+      "category": "structure",
+      "pitchPoints": ["Clear headings", "Key definitions surfaced", "Connections between ideas"]
+    },
+    {
+      "id": "ai-flashcards",
+      "name": "AI Flashcards",
+      "blurb": "Flashcards auto-generated from notes, PDFs, and videos.",
+      "slug": "/ai-flashcard-generator",
+      "category": "test",
+      "pitchPoints": ["Active recall from your own material", "Cards in minutes, not hours", "Feeds spaced repetition"]
+    },
+    {
+      "id": "ai-mind-maps",
+      "name": "AI Mind Maps",
+      "blurb": "Visual concept maps that show how ideas connect.",
+      "slug": "/mind-map-ai",
+      "category": "structure",
+      "pitchPoints": ["See the whole topic at once", "Spot missing connections"]
+    },
+    {
+      "id": "ai-quizzes",
+      "name": "AI Quizzes",
+      "blurb": "Multiple-choice quizzes generated from your material.",
+      "slug": "/quiz-generator",
+      "category": "test",
+      "pitchPoints": ["Self-test in seconds", "Same source as your notes"]
+    },
+    {
+      "id": "ai-podcast",
+      "name": "AI Podcast Generation",
+      "blurb": "Your material explained as an audio podcast.",
+      "slug": "/ai-podcast-generator",
+      "category": "learn-differently",
+      "pitchPoints": ["Listen on the go", "Hear material explained, not just read"]
+    },
+    {
+      "id": "ai-chat",
+      "name": "AI Chat",
+      "blurb": "Ask questions about your notebook; answers grounded in your material.",
+      "slug": "/ai-chat",
+      "category": "learn-differently",
+      "pitchPoints": ["Grounded in your notebook, not the open web", "Ask follow-ups freely"]
+    },
+    {
+      "id": "pdf-upload",
+      "name": "PDF Upload",
+      "blurb": "Upload a PDF and Nomi indexes and structures it.",
+      "slug": "/ai-pdf-summarizer",
+      "category": "ingest",
+      "pitchPoints": ["Text PDFs and image PDFs", "Indexes the PDF for chat"]
+    },
+    {
+      "id": "youtube-import",
+      "name": "YouTube Import",
+      "blurb": "Turn a YouTube lecture into notes, flashcards, and quizzes.",
+      "slug": "/youtube-to-notes",
+      "category": "ingest",
+      "pitchPoints": ["Lecture videos → study material", "No manual transcription"]
+    },
+    {
+      "id": "spaced-repetition",
+      "name": "Spaced Repetition",
+      "blurb": "Nomi schedules review of flashcards so you remember long-term.",
+      "slug": "/spaced-repetition",
+      "category": "remember",
+      "pitchPoints": ["Surfaces cards right before you'd forget", "Moves material to long-term memory"]
+    },
+    {
+      "id": "study-guides",
+      "name": "Study Guides",
+      "blurb": "A condensed, exam-ready study guide from your material.",
+      "slug": "/ai-study-guide-generator",
+      "category": "structure",
+      "pitchPoints": ["Exam-ready condensation", "The high-signal slice of your material"]
+    },
+    {
+      "id": "document-summaries",
+      "name": "Document Summaries",
+      "blurb": "Short and detailed summaries of articles, papers, and chapters.",
+      "slug": "/document-summary",
+      "category": "structure",
+      "pitchPoints": ["Skim or go deep", "Summaries in your chosen language"]
+    }
+  ]
+}

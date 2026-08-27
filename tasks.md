@@ -1,0 +1,6 @@
+SEO follow-ups (after the 2026-05-08 SEO batch)
+- Apple touch icon + multi-size PNGs. Right now apps/web/app/manifest.ts points all icon sizes at /icons/fox-logo.png with sizes "any". Generate proper 192×192, 512×512 PNGs (and a 180×180 apple-touch-icon), drop them in apps/web/public/icons/, and update manifest.ts entries to list each with its real size + a maskable variant.
+- Twitter handle. Once @nomi (or whichever handle) exists, add `twitter.site` and `twitter.creator` to the metadata block in apps/web/app/layout.tsx so share cards attribute correctly.
+- Push + verify. `git push origin master` then run `next build` locally to catch anything that didn't surface in the per-file type checks. Smoke-test the new routes: /robots.txt, /sitemap.xml, /manifest.webmanifest, /opengraph-image, /twitter-image.
+- Search Console + Bing Webmaster. After deploy, submit the sitemap (https://www.nomistudy.com/sitemap.xml) in both, and verify apex→www redirect resolves with a 307 to https://www.nomistudy.com/.
+- Brand-page schema upgrade. When ready, add SoftwareApplication + AggregateRating JSON-LD on the landing page (out of scope for this batch since user said "except the landing page"). Also FAQPage if/when there's a public FAQ.
